@@ -7,22 +7,24 @@
 /* Istruzioni */
 
 // Chiedi all'utente la mail usando prompt 
-const mail = prompt ('Inserisci una mail');
+const mail = prompt('Inserisci una mail');
 /* console.log(mail); */
-// Crea un array di mail di cui una o due saranno valide per l'accesso
+// Crea un array di mail valide per l'accesso
 const mails = ['topolino@redisney.com', 'eccopippo@gambadilegno.com', 'paperino@paperopoli.com', 'evilmarkus@hotmail.it', 'momylove@gmail.com'];
+
+let isValid = false
 // Fai un controllo nell'array con un ciclo for e a seconda dell'esito scrivi un messaggio
-for (let mail = 0; mail < mails.length; mail++) {
-    const element = mails[mail];
+for (let i = 0; i < mails.length; i++) {
+    const element = mails[i];
     console.log(element);
-    if (element == 'evilmarkus@hotmail.it') {
+    if (mail === element) {
+        isValid = true;
         alert('La mail è valida');
-    } else if (element == 'momylove@gmail.com') {
-        alert('La mail è valida');
-    } else {
-        alert('La mail non risulta valida');
     }
+
 }
+
+alert('La mail non è valida');
 
 // Gioco dei dadi
 
@@ -42,7 +44,7 @@ const cpu = Math.floor(Math.random() *6); */
 // Con un ciclo for verifichiamo l'array
 /* for (let i = 0; i < numbers.length; i++) {
     const element = numbers[i];
-    console.log(element);  
+    console.log(element);
 } */
 
 // All'interno del ciclo for creiamo un ciclo if
