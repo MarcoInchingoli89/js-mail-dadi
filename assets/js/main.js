@@ -12,19 +12,18 @@ const mail = prompt('Inserisci una mail');
 // Crea un array di mail valide per l'accesso
 const mails = ['topolino@redisney.com', 'eccopippo@gambadilegno.com', 'paperino@paperopoli.com', 'evilmarkus@hotmail.it', 'momylove@gmail.com'];
 
-let isValid = false
+let output = "La mail non è valida"
 // Fai un controllo nell'array con un ciclo for e a seconda dell'esito scrivi un messaggio
 for (let i = 0; i < mails.length; i++) {
     const element = mails[i];
     console.log(element);
     if (mail === element) {
-        isValid = true;
-        alert('La mail è valida');
+        output = "La mail è valida";
     }
 
 }
 
-alert('La mail non è valida');
+alert(output);
 
 // Gioco dei dadi
 
