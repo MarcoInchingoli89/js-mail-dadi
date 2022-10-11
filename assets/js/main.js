@@ -7,9 +7,22 @@
 /* Istruzioni */
 
 // Chiedi all'utente la mail usando prompt
+const mail = prompt ('Inserisci una mail');
+/* console.log(mail); */
 // Crea un array di mail di cui una o due saranno valide per l'accesso
-// Fai un controllo nell'array con un ciclo for
-// A seconda dell'esito scrivi un messaggio in console
+const mails = ['topolino@redisney.com', 'eccopippo@gambadilegno.com', 'paperino@paperopoli.com', 'evilmarkus@hotmail.it', 'momylove0612@gmail.com'];
+// Fai un controllo nell'array con un ciclo for e a seconda dell'esito scrivi un messaggio
+for (let mail = 0; mail < mails.length; mail++) {
+    const element = mails[mail];
+    console.log(element);
+    if (element == 'evilmarkus@hotmail.it') {
+        alert('La mail è valida');
+    } else if (element == 'momylove0612@gmail.com') {
+        alert('La mail è valida');
+    } else {
+        alert('La mail non risulta valida');
+    }
+}
 
 // Gioco dei dadi
 
